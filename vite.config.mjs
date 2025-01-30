@@ -1,3 +1,5 @@
+import { defineConfig } from 'vite';
+
 export default defineConfig({
   root: '.',
   base: '/', // or change based on deployment
