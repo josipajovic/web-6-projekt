@@ -1,4 +1,3 @@
-import "./styles.css";
 let deferredPrompt;
 let barcodeDetector;
 let detected = false;
