@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Barcode Scanner</title>
+
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#4CAF50">
+  <link rel="icon" type="image/png" href="icons/icon-192x192.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Welcome to Barcode Scanner</h1>
+  <video id="video" autoplay></video>
+  <button id="installBtn" hidden>Install App</button>
+
+  <div id="popup" class="popup">
+    <div class="popup-content">
+      <span class="popup-close" onclick="closePopup()">×</span>
+      <h2>Barcode found</h2>
+      <p id="popup-message"></p>
+      <button onclick="closePopup()">Close</button>
+    </div>
+  </div>
+
+  <p>Or you can enter barcode manually</p>
+  <input type="text" id="manualBarcode" placeholder="">
+  <button onclick="submitManualBarcode()">Submit</button>
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>
